@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/icons/fontawesome-free-6.1.1-web/css/all.min.css"/>
+    <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png"/>
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/style.css"/>
+    <title>Rosie Garden</title>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <a href="index.html" class="logo">
+                Rosie Garden
+            </a>
+            <div class="navigation">
+                <div class="nav-items">
+                    <i class="fa-solid fa-xmark nav-close-btn"></i>
+                    <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="#about"><i class="fa-solid fa-address-card"></i> About Us</a>
+                    <a href="#rooms"><i class="fa-solid fa-hotel"></i> Room Categories</a>
+                    <a href="rooms.html"><i class="fa-solid fa-bed"></i> Room</a>
+                    <a href="#service"><i class="fa-solid fa-bell-concierge"></i> Service</a>
+                    <button class="login-btn" onclick="toggleLogin()">Login <i class="fa-solid fa-right-to-bracket"></i></button>
+                </div>
+            </div>
+            <i class="fa-solid fa-grip nav-menu-btn"></i>
+        </div>
+    </header>
+
+    <div class="overlay">
+        <div class="login-icon">
+            <i class="fa-solid fa-xmark" onclick="toggleLogin()"></i>
+        </div>
+        <form action="#" class="form">
+            <h1 class="form-title">Login</h1>
+            <img src="/assets/images/login.png" class="img-login">
+            <div class="form-div">
+                <input type="text" class="form-input" placeholder=" ">
+                <label for="" class="form-label">Email</label>
+            </div>
+            <div class="form-div">
+                <input type="password" class="form-input" placeholder=" ">
+                <label for="" class="form-label">Password</label>
+            </div>
+            <input type="checkbox" class="check-box"><span style="color: #fd4; padding-left: 3px;"> Remember</span>
+            <a href="#" class="forgot-password">Forgot password?</a>
+            <button type="submit" class="form-button">Login</button>
+            <a href="register.html" class="register">You don't have account? <span>SignIn</span></a>
+        </form>
+    </div>
+
+    <section class="home" id="home">
+        <div class="media-icons">
+            <a href="#"><i class="fa-solid fa-phone"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-messenger"></i></a>
+        </div>
+        <div class="swiper bg-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide dark-layer">
+                    <img src="assets/images/home_1.jpg" alt=""/>
+                    <div class="text-content">
+                        <h2 class="title">Rosie <span>Garden</span></h2>
+                        <p>
+                            Have you ever dreamed of resting in a wooden house in the middle of a romantic steppe? Now, without going to Europe, Rosie Garden has brought that dream closer to you
+                            <br>
+                            The block of high-class pine wooden houses, 100% imported from Europe, meets FAS standards to bring a high-class experience to guests.
+                        </p>
+                        <button class="read-btn">Read more <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="swiper-slide dark-layer">
+                    <img src="assets/images/home_2.jpg" alt=""/>
+                    <div class="text-content">
+                        <h2 class="title">Rosie <span>Garden</span></h2>
+                        <p>
+                            Have you ever dreamed of resting in a wooden house in the middle of a romantic steppe? Now, without going to Europe, Rosie Garden has brought that dream closer to you
+                            <br>
+                            The block of high-class pine wooden houses, 100% imported from Europe, meets FAS standards to bring a high-class experience to guests.
+                        </p>
+                        <button class="read-btn">Read more <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="swiper-slide dark-layer">
+                    <img src="assets/images/home_3.jpg" alt=""/>
+                    <div class="text-content">
+                        <h2 class="title">Rosie <span>Garden</span></h2>
+                        <p>
+                            Have you ever dreamed of resting in a wooden house in the middle of a romantic steppe? Now, without going to Europe, Rosie Garden has brought that dream closer to you
+                            <br>
+                            The block of high-class pine wooden houses, 100% imported from Europe, meets FAS standards to bring a high-class experience to guests.
+                        </p>
+                        <button class="read-btn">Read more <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="swiper-slide dark-layer">
+                    <img src="assets/images/home_4.jpg" alt=""/>
+                    <div class="text-content">
+                        <h2 class="title">Rosie <span>Garden</span></h2>
+                        <p>
+                            Have you ever dreamed of resting in a wooden house in the middle of a romantic steppe? Now, without going to Europe, Rosie Garden has brought that dream closer to you
+                            <br>
+                            The block of high-class pine wooden houses, 100% imported from Europe, meets FAS standards to bring a high-class experience to guests.
+                        </p>
+                        <button class="read-btn">Read more <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-slider-thumbs">
+            <div class="swiper-wrapper thumbs-container">
+                <img src="assets/images/home_1.jpg" class="swiper-slide" alt=""/>
+                <img src="assets/images/home_2.jpg" class="swiper-slide" alt=""/>
+                <img src="assets/images/home_3.jpg" class="swiper-slide" alt=""/>
+                <img src="assets/images/home_4.jpg" class="swiper-slide" alt=""/>
+            </div>
+        </div>
+    </section>
+
+    <section class="about top" id="about">
+        <div class="container flex">
+            <div class="left">
+                <div class="img">
+                    <img src="assets/images/about_1.jpg" alt="" class="image1">
+                    <img src="assets/images/about_2.jpg" alt="" class="image2">
+                </div>
+            </div>
+            <div class="right">
+                <div class="heading">
+                    <h5>LIFETIME HAPPY ON ROSIE GARDEN</h5>
+                    <h2>Welcome to Rosie Garden Homestay</h2>
+                    <p>
+                        What is your definition of happiness?! For Rosie, it is a family together towards a safe place, parents relaxing, children quiet in experience.
+                        So this summer, Rosie's family will reopen the HAPPY COMBO PACKAGE offer with room rates from only VND 800,000 including:<br>
+                        <i class="fa-brands fa-pagelines icon-item"></i> Stay in the standard room of Rosie Garden <br>
+                        <i class="fa-brands fa-pagelines icon-item"></i> Stay in high-class European wooden houses <br>
+                        <i class="fa-brands fa-pagelines icon-item"></i> Free breakfast and coffee <br>
+                        <i class="fa-brands fa-pagelines icon-item"></i> Experience exploring the fairy garden with 360 degrees of check-in <br>
+                        <i class="fa-brands fa-pagelines icon-item"></i> Advice and introduction to famous places and places of interest 
+                    </p>
+                    <button class="read-btn">Read more <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="homestay section" id="homestay">
+        <div class="container flex">
+            <div class="left">
+                <img src="assets/images/homestay.jpg" alt="">
+            </div>
+            <div class="right">
+                <div class="text">
+                    <h2>Experience the European pine wooden house right in the great Central Highlands</h2>
+                    <p>Have you ever dreamed of resting in a wooden house in the middle of a romantic steppe? Now, without going to Europe, Rosie Garden has brought that dream closer to you</p>
+                </div>
+                <div class="accordionWrapper">
+                    <div class="accordionItem open">
+                        <h2 class="accordionIHeading">Wooden house block</h2>
+                        <div class="accordionItemContent">
+                            <p>
+                                The block of high-class pine wooden houses, 100% imported from Europe, meets FAS standards to bring a high-class experience to guests.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordionItem close">
+                        <h2 class="accordionIHeading">Variety of room types</h2>
+                        <div class="accordionItemContent">
+                            <p>
+                                Diverse room types: odd block, bungallow, familly, dom...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordionItem close">
+                        <h2 class="accordionIHeading">Treehouse</h2>
+                        <div class="accordionItemContent">
+                            <p>
+                                Treehouse offers a unique experience
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordionItem close">
+                        <h2 class="accordionIHeading">Campus</h2>
+                        <div class="accordionItemContent">
+                            <p>
+                                The campus of more than 2,000 square meters is covered with flowers and trees
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordionItem close">
+                        <h2 class="accordionIHeading">Dining area</h2>
+                        <div class="accordionItemContent">
+                            <p>
+                                Coffee and dining area for in-house guests
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordionItem close">
+                        <h2 class="accordionIHeading">Service</h2>
+                        <div class="accordionItemContent">
+                            <p>
+                                Serving buffet, BBQ according to customer's request
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="galary top" id="gallary">
+        <div class="container">
+            <div class="heading-top flex-1">
+                <div class="heading">
+                    <h5>Collection</h5>
+                    <h2>Rosie Garden Homestay</h2>
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="assets/images/room_1.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="assets/images/room_2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="assets/images/room_3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="assets/images/room_4.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="assets/images/room_5.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="assets/images/room_6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rooms section" id="rooms">
+        <div class="container">
+            <div class="heading-top flex-1">
+                <div class="heading">
+                    <h5>Discover</h5>
+                    <h2>Room types of Rosie Garden</h2>
+                </div>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide dark-layer">
+                    <img src="/assets/images/room_1.jpg" alt="">
+                    <div class="text-content-room">
+                        <h2 class="title-room">590$ <span>/1 night</span></h2>
+                        <p>
+                            Enjoy your wonderful vacation
+                            <br>
+                            The place of wooden houses lying peacefully under the green pine trees.
+                        </p>
+                        <button class="read-room-btn">Read more <i class="fa-solid fa-hotel"></i></button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide dark-layer">
+                    <img src="/assets/images/room_2.jpg" alt="">
+                    <div class="text-content-room">
+                        <h2 class="title-room">590$ <span>/1 night</span></h2>
+                        <p>
+                            Enjoy your wonderful vacation
+                            <br>
+                            The place of wooden houses lying peacefully under the green pine trees.
+                        </p>
+                        <button class="read-room-btn">Read more <i class="fa-solid fa-hotel"></i></button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide dark-layer">
+                    <img src="/assets/images/room_3.jpg" alt="">
+                    <div class="text-content-room">
+                        <h2 class="title-room">590$ <span>/1 night</span></h2>
+                        <p>
+                            Enjoy your wonderful vacation
+                            <br>
+                            The place of wooden houses lying peacefully under the green pine trees.
+                        </p>
+                        <button class="read-room-btn">Read more <i class="fa-solid fa-hotel"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form top">
+        <div class="container">
+            <div class="heading-top flex-1">
+                <div class="heading">
+                    <h5>Evaluate</h5>
+                    <h2>Message to Rosie Garden</h2>
+                </div>
+            </div>
+            <div class="contact-in">
+                <div class="comment-wrapper">
+                    <div class="input-box">
+                        <div class="comment-area">
+                            <span class="placeholder">Let us know...</span>
+                            <div class="input editable" contenteditable="true" spellcheck="false"></div>
+                            <div class="input readonly" contenteditable="true" spellcheck="false"></div>
+                        </div>
+                        <div class="privacy">
+                            <div class="star-widget"> 
+                                <input type="radio" name="rate" id="rate-5">
+                                <label for="rate-5" class="fa-solid fa-star"></label>
+                                <input type="radio" name="rate" id="rate-4">
+                                <label for="rate-4" class="fa-solid fa-star"></label>
+                                <input type="radio" name="rate" id="rate-3">
+                                <label for="rate-3" class="fa-solid fa-star"></label>
+                                <input type="radio" name="rate" id="rate-2">
+                                <label for="rate-2" class="fa-solid fa-star"></label>
+                                <input type="radio" name="rate" id="rate-1">
+                                <label for="rate-1" class="fa-solid fa-star"></label>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="bottom">
+                        <div class="content">
+                            <span class="counter">500</span>
+                            <button class="up-btn" type="submit">Post</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="comment-review">
+                    <div class="comment-container">
+                        <div class="comment-card">
+                            <h3 class="comment-title">David</h3>
+                            <p>
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+                            </p>
+                            <div class="conment-card-footer">
+                                <div>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="comment-card">
+                            <h3 class="comment-title">Lucy</h3>
+                            <p>
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+                            </p>
+                            <div class="conment-card-footer">
+                                <div>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="comment-card">
+                            <h3 class="comment-title">Tom</h3>
+                            <p>
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+                            </p>
+                            <div class="conment-card-footer">
+                                <div>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="comment-card">
+                            <h3 class="comment-title">Andree</h3>
+                            <p>
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+                            </p>
+                            <div class="conment-card-footer">
+                                <div>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SERVICE-->
+    <section class="services section" id="service">
+        <div class="container">
+            <div class="heading-top">
+                <div class="heading">
+                    <h5>Service</h5>
+                    <h2>Always give the best to customers</h2>
+                </div>
+            </div>
+            <div class="service-in">
+                <div class="box-container">
+                    <div class="box-service">
+                        <div class="bar"></div>
+                        <img src="/assets/images/service_1.jpg" alt="1">
+                        <h1>Party Setup</h1>
+                        <p>Set up a party on request, an outdoor BBQ party, or decorate a themed party setup for guests</p>
+                        <a href="#" class="service-btn">Read more</a>
+                    </div>
+                    <div class="box-service">
+                        <div class="bar"></div>
+                        <img src="/assets/images/service_2.jpg" alt="1">
+                        <h1>Coffee shop</h1>
+                        <p>Experience exploring the fairy garden with 360-degree check-in</p>
+                        <a href="#" class="service-btn">Read more</a>
+                    </div>
+                    <div class="box-service">
+                        <div class="bar"></div>
+                        <img src="/assets/images/home_3.jpg" alt="1">
+                        <h1>Service</h1>
+                        <p>Advice and introduction to famous places and places of interest</p>
+                        <a href="#" class="service-btn">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-map top">
+        <div class="container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.850420001003!2d108.32601531512219!3d14.607595480820766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3168f95c26f7b48f%3A0x91cc6004ca0e9f6f!2sAH132%2C%20Kon%20Pl%C3%B4ng%2C%20Kon%20Tum%2C%20Vietnam!5e0!3m2!1sen!2s!4v1657691156479!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>About us</h4>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Where the wooden houses lie peacefully under the green pines,
+                                The perfect place to stay to help you get close to nature in the cold weather
+                                and cool breeze all year round.
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Why choose Rosie Garden?</h4>
+                    <ul>
+                        <li><a href="#">Rosie Coffee - Homestay</a></li>
+                        <li><a href="#">Explore cozy wooden rooms</a></li>
+                        <li><a href="#">Cradle of million-like photos</a></li>
+                        <li><a href="#">Happy package about Rosie Garden</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Ask Rosie Garden</h4>
+                    <ul>
+                        <li><a href="#">Is there a dormitory room at Rosie's?</a></li>
+                        <li><a href="#">How much is a room rate at Rosie?</a></li>
+                        <li><a href="#">What services does Rosie provide?</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact us</h4>
+                    <ul>
+                        <li><a href="#">AH132,Đắk Long,Kon Plông,Kon Tum</a></li>
+                        <li><a href="#">093 186 86 66</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:20,
+            nav:true,
+            dots: false,
+            navText: ["<i class='fa-solid fa-angle-left'></i>", "<i class='fa-solid fa-angle-right'></i>"],
+            responsive:{
+                0:{
+                    items:1
+                },
+                414:{
+                    items: 1
+                },
+                768:{
+                    items:1
+                },
+                1000:{
+                    items:3
+                },
+            }
+        })
+
+
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+            }
+        });
+    </script>
+    <script>
+        var accItem = document.getElementsByClassName('accordionItem');
+        var accHD = document.getElementsByClassName('accordionIHeading');
+
+        for(i = 0; i < accHD.length; i++){
+        accHD[i].addEventListener('click', toggleItem, false);
+        }
+
+        function toggleItem(){
+        var itemClass = this.parentNode.className;
+        for(var i = 0; i < accItem.length; i++){
+            accItem[i].className = 'accordionItem close';
+        }
+        if(itemClass == 'accordionItem close'){
+            this.parentNode.className = 'accordionItem open';
+        }
+        }
+    </script>
+    <script>
+        const editableInput = document.querySelector(".editable")
+        const readonlyInput = document.querySelector(".readonly")
+        const placeholder = document.querySelector(".placeholder")
+        const counter = document.querySelector(".counter")
+        const button = document.querySelector(".up-btn")
+
+        editableInput.onkeyup = (e)=>{
+        let element = e.target;
+        checkInput(element);
+        }
+
+        editableInput.onkeypress = (e)=>{
+        let element = e.target;
+        checkInput(element);
+        placeholder.style.display = "none";
+        }
+
+        function checkInput(element){
+        let maxLength = 500;
+        let currentLength = element.innerText.length;
+        let textTag = element.innerHTML;
+
+        if(currentLength <= 0){
+            placeholder.style.display = "block";
+            counter.style.display = "none";
+            button.classList.remove("active");
+        }else{
+            counter.style.display = "block";
+            placeholder.style.display = "none";
+            button.classList.add("active");
+        }
+
+        counter.innerText = maxLength - currentLength;
+
+        if(currentLength > maxLength){
+            let overText = element.innerText.substr(maxLength);
+            overText = `<span class="highlight">${overText}</span>`;
+            textTag = element.innerText.substr(0, maxLength) + overText;
+            readonlyInput.style.zIndex = "1";
+            counter.style.color = "#fd4";
+            button.classList.remove("active");
+        }else{
+            readonlyInput.style.zIndex = "-1";
+            counter.style.color = "#fff";
+        }
+
+        readonlyInput.innerHTML = textTag;
+        }
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>

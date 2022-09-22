@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/icons/fontawesome-free-6.1.1-web/css/all.min.css"/>
+    <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png"/>
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/rooms.css"/>
+    <title>Rosie Garden</title>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <a href="index.html" class="logo">
+                Rosie Garden
+            </a>
+            <div class="navigation">
+                <div class="nav-items">
+                    <i class="fa-solid fa-xmark nav-close-btn"></i>
+                    <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="#"><i class="fa-solid fa-address-card"></i> About Us</a>
+                    <a href="#"><i class="fa-solid fa-hotel"></i> Room Categories</a>
+                    <a href="#"><i class="fa-solid fa-bed"></i> Room</a>
+                    <a href="#"><i class="fa-solid fa-bell-concierge"></i> Service</a>
+                    <button href="#" class="login-btn" onclick="toggleLogin()">Login <i class="fa-solid fa-right-to-bracket"></i></button>
+                </div>
+            </div>
+            <i class="fa-solid fa-grip nav-menu-btn"></i>
+        </div>
+    </header>
+
+    <div class="overlay">
+        <div class="login-icon">
+            <i class="fa-solid fa-xmark" onclick="toggleLogin()"></i>
+        </div>
+        <form action="#" class="form">
+            <h1 class="form-title">Login</h1>
+            <img src="/assets/images/login.png" class="img-login">
+            <div class="form-div">
+                <input type="text" class="form-input" placeholder=" ">
+                <label for="" class="form-label">Email</label>
+            </div>
+            <div class="form-div">
+                <input type="password" class="form-input" placeholder=" ">
+                <label for="" class="form-label">Password</label>
+            </div>
+            <input type="checkbox" class="check-box"><span style="color: #fd4; padding-left: 3px;"> Remember</span>
+            <a href="#" class="forgot-password">Forgot password?</a>
+            <button type="submit" class="form-button">Login</button>
+            <a href="register.html" class="register">You don't have account? <span>SignIn</span></a>
+        </form>
+    </div>
+
+    <section class="about top"></section>
+
+    <section class="bg-main section">
+        <div class="container">
+            <div class="box">
+                <div class="breadcumb">
+                    <a href="index.html">Home</a>
+                    <span><i class="fa-solid fa-chevron-right"></i></span>
+                    <a href="rooms.html">All rooms</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="row">
+                    <div class="col-3 filter-col" id="filter-col">
+                        <div class="box">
+                            <div class="search">
+                                <input type="text" placeholder="Tìm kiếm">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="dropdown">
+                                <input type="text" class="textBox" placeholder="Select room type" readonly>
+                                <div class="option">
+                                    <div onclick="show('Room type 1')">Room type 1</div>
+                                    <div onclick="show('Room type 2')">Room type 2</div>
+                                    <div onclick="show('Room type 3')">Room type 3</div>
+                                    <div onclick="show('Room type 4')">Room type 4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9 col-md-12">
+                        <div class="box">
+                            <div class="room-box">
+                                <h1 class="room-title">Room types of Rosie Garden</h1>
+                                <div class="rooms-list">
+                                    <div class="container">
+                                        <div class="room-items">
+                                            <div class="room-list">
+                                                <div class="room-content">
+                                                    <div class="room-img">
+                                                        <img src="./assets/images/home_1.jpg" alt="Room type 1">
+                                                    </div>
+                                                </div>
+
+                                                <div class="room-info">
+                                                    <div class="room-info-top">
+                                                        <h2 class="sm-title">Rosie Garden</h2>
+                                                        <div class="room-rating">
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="room-name">Room type 1</a>
+                                                    <p class="room-price">590$</p>
+                                                    <p class="room-price" style="color: #000;">/ 1 night</p>
+                                                    <button class="view-btn">Read more <i class="fa-solid fa-right-to-bracket"></i></button>
+                                                </div>
+
+                                                <div class="off-info">
+                                                    <h2 class="sm-title">Sale</h2>
+                                                </div>
+                                            </div>
+
+                                            <div class="room-list">
+                                                <div class="room-content">
+                                                    <div class="room-img">
+                                                        <img src="./assets/images/home_1.jpg" alt="Room type 1">
+                                                    </div>
+                                                </div>
+
+                                                <div class="room-info">
+                                                    <div class="room-info-top">
+                                                        <h2 class="sm-title">Rosie Garden</h2>
+                                                        <div class="room-rating">
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="room-name">Room type 1</a>
+                                                    <p class="room-price">590$</p>
+                                                    <p class="room-price" style="color: #000;">/ 1 night</p>
+                                                    <button class="view-btn">Read more <i class="fa-solid fa-right-to-bracket"></i></button>
+                                                </div>
+
+                                                <div class="off-info">
+                                                    <h2 class="sm-title">Sale</h2>
+                                                </div>
+                                            </div>
+
+                                            <div class="room-list">
+                                                <div class="room-content">
+                                                    <div class="room-img">
+                                                        <img src="./assets/images/home_1.jpg" alt="Room type 1">
+                                                    </div>
+                                                </div>
+
+                                                <div class="room-info">
+                                                    <div class="room-info-top">
+                                                        <h2 class="sm-title">Rosie Garden</h2>
+                                                        <div class="room-rating">
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="room-name">Room type 1</a>
+                                                    <p class="room-price">590$</p>
+                                                    <p class="room-price" style="color: #000;">/ 1 night</p>
+                                                    <button class="view-btn">Read more <i class="fa-solid fa-right-to-bracket"></i></button>
+                                                </div>
+
+                                                <div class="off-info">
+                                                    <h2 class="sm-title">Sale</h2>
+                                                </div>
+                                            </div>
+
+                                            <div class="room-list">
+                                                <div class="room-content">
+                                                    <div class="room-img">
+                                                        <img src="./assets/images/home_1.jpg" alt="Room type 1">
+                                                    </div>
+                                                </div>
+
+                                                <div class="room-info">
+                                                    <div class="room-info-top">
+                                                        <h2 class="sm-title">Rosie Garden</h2>
+                                                        <div class="room-rating">
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="room-name">Room type 1</a>
+                                                    <p class="room-price">590$</p>
+                                                    <p class="room-price" style="color: #000;">/ 1 night</p>
+                                                    <button class="view-btn">Read more <i class="fa-solid fa-right-to-bracket"></i></button>
+                                                </div>
+
+                                                <div class="off-info">
+                                                    <h2 class="sm-title">Sale</h2>
+                                                </div>
+                                            </div>
+
+                                            <div class="room-list">
+                                                <div class="room-content">
+                                                    <div class="room-img">
+                                                        <img src="./assets/images/home_1.jpg" alt="Room type 1">
+                                                    </div>
+                                                </div>
+
+                                                <div class="room-info">
+                                                    <div class="room-info-top">
+                                                        <h2 class="sm-title">Rosie Garden</h2>
+                                                        <div class="room-rating">
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                            <span><i class="fa-solid fa-star"></i></span>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="room-name">Room type 1</a>
+                                                    <p class="room-price">590$</p>
+                                                    <p class="room-price" style="color: #000;">/ 1 night</p>
+                                                    <button class="view-btn">Read more <i class="fa-solid fa-right-to-bracket"></i></button>
+                                                </div>
+
+                                                <div class="off-info">
+                                                    <h2 class="sm-title">Sale</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pagination">
+                                            <ul class="page">
+                                                <a href="#page"><li>Previous</li></a>
+                                                <a href="#page"><li>Next</li></a>
+                                                <a href="#page" class="active"><li>1</li></a>
+                                                <a href="#page"><li>2</li></a>
+                                                <a href="#page"><li>3</li></a>
+                                                <a href="#page"><li>4</li></a>
+                                                <a href="#page"><li>5</li></a>
+                                                <li>...</li>
+                                                <a href="#page"><li>21</li></a>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>About us</h4>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Where the wooden houses lie peacefully under the green pines,
+                                The perfect place to stay to help you get close to nature in the cold weather
+                                and cool breeze all year round.
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Why choose Rosie Garden?</h4>
+                    <ul>
+                        <li><a href="#">Rosie Coffee - Homestay</a></li>
+                        <li><a href="#">Explore cozy wooden rooms</a></li>
+                        <li><a href="#">Cradle of million-like photos</a></li>
+                        <li><a href="#">Happy package about Rosie Garden</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Ask Rosie Garden</h4>
+                    <ul>
+                        <li><a href="#">Is there a dormitory room at Rosie's?</a></li>
+                        <li><a href="#">How much is a room rate at Rosie?</a></li>
+                        <li><a href="#">What services does Rosie provide?</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact us</h4>
+                    <ul>
+                        <li><a href="#">AH132,Đắk Long,Kon Plông,Kon Tum</a></li>
+                        <li><a href="#">093 186 86 66</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+</body>
+</html>
